@@ -1,6 +1,9 @@
-angular.module('app',[]);
+//initializing modules.
+angular.module('app',['calculator']); // injecting dependency.
+angular.module('calculator',[]); 
 
-angular.module('app').directive('calculator', [function () {
+//calculator directive for calculator module.
+angular.module('calculator').directive('calculator', [function () {
 	return {
 		restrict: 'E',
 		controller:function($scope, $compile){
