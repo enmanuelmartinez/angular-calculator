@@ -7,19 +7,7 @@
 </head>
 <body ng-app="app">
 
-<div id="calculator" ng-controller="CalculatorController">
-	<!-- Screen and clear key -->
-	<div class="top">
-		<span class="clear" ng-click="clear()">C</span>
-		<input type="text" class="screen" ng-model="screen" autofocus value="{{ screen }}" ng-keyup="screenKeyUp($event)" />
-	</div>
-	
-	<div class="keys">
-		<!-- operators and other keys -->
-		<span ng-repeat="button in buttons" class="{{ button.type }}" ng-click="clickButton(button)">{{ button.value }}</span>
-	</div>
-</div>
-
+<calculator></calculator>
 
 <script type="text/javascript" src="scripts/angular/angular.js"></script>
 <script type="text/javascript" src="scripts/angular/angular-touch.min.js"></script>
